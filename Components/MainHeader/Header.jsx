@@ -3,8 +3,10 @@ import logoImage from '@/assets/logo.png'
 import Link from 'next/link'
 import classes from './header.module.css'
 import Image from 'next/image'
+import HeaderNavLink from './HeaderNavLink'
 
 const Header = () => {
+
     return (
         <header className={classes.header}>
             <Link className={classes.logo} href={"/"}>
@@ -14,10 +16,10 @@ const Header = () => {
             <nav className={classes.nav}>
                 <ul>
                     <li>
-                        <Link href={"/meals"}>Meals</Link>
+                        <HeaderNavLink href="/meals" >Meals</HeaderNavLink>
                     </li>
                     <li>
-                        <Link href={"/community"}>Community</Link>
+                        <HeaderNavLink href="/community" >Community</HeaderNavLink>
                     </li>
                 </ul>
             </nav>
