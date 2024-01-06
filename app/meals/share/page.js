@@ -1,9 +1,9 @@
 import ImagePicker from '@/Components/ImagePicker/ImagePicker';
 import classes from './page.module.css';
 import { shareMeal } from '@/lib/serverAction';
+import ShareMealFormButton from '@/Components/Meals/ShareMealFormButton';
 
 const SharePage = () => {
-
     return (
         <>
             <header className={classes.header}>
@@ -43,7 +43,7 @@ const SharePage = () => {
                     </p>
                     <ImagePicker label="Image" name="image" />
                     <p className={classes.actions}>
-                        <button type="submit">Share Meal</button>
+                        <ShareMealFormButton />
                     </p>
                 </form>
             </main>
